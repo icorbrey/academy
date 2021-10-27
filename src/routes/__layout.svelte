@@ -1,3 +1,9 @@
+<script lang="ts">
+	import { showTextAfterFontsLoad } from '../utils/showTextAfterFontsLoad';
+</script>
+
+<svelte:window on:load={showTextAfterFontsLoad} />
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link
@@ -18,10 +24,11 @@
 		--font-heading: 'Nunito Sans', sans-serif;
 		--font-content: 'Poppins', sans-serif;
 
-		--color-heading: #282828;
-		--color-content: #404040;
-		--color-link-fresh: #0258a0;
-		--color-link-viewed: #6018f8;
+		--color-hidden: transparent;
+		--color-darker-gray: #282828;
+		--color-dark-gray: #404040;
+		--color-blue: #0258a0;
+		--color-purple: #6018f8;
 	}
 
 	:global(html),
@@ -30,5 +37,19 @@
 		padding: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	:global(html:not(.loaded)) {
+		--color-heading: var(--color-hidden);
+		--color-content: var(--color-hidden);
+		--color-link-fresh: var(--color-hidden);
+		--color-link-viewed: var(--color-hidden);
+	}
+
+	:global(html.loaded) {
+		--color-heading: var(--color-darker-gray);
+		--color-content: var(--color-dark-gray);
+		--color-link-fresh: var(--color-blue);
+		--color-link-viewed: var(--color-purple);
 	}
 </style>
