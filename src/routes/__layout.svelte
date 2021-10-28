@@ -13,6 +13,8 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap"
 		rel="stylesheet" />
+
+	<title>The Academy</title>
 </svelte:head>
 
 <slot />
