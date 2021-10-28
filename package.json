@@ -1,6 +1,9 @@
 {
 	"name": "academy",
 	"version": "0.0.1",
+	"repository": {
+		"url": "https://github.com/icorbrey/academy"
+	},
 	"scripts": {
 		"start": "svelte-kit dev --open",
 		"dev": "svelte-kit dev",
