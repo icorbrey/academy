@@ -1,9 +1,3 @@
-<script lang="ts">
-	import { showTextAfterFontsLoad } from '../utils/showTextAfterFontsLoad';
-</script>
-
-<svelte:window on:load={showTextAfterFontsLoad} />
-
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link
