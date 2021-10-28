@@ -20,7 +20,6 @@
 		--font-heading: 'Nunito Sans', sans-serif;
 		--font-content: 'Poppins', sans-serif;
 
-		--color-hidden: transparent;
 		--color-darker-gray: #282828;
 		--color-dark-gray: #404040;
 		--color-blue: #0258a0;
