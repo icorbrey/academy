@@ -35,14 +35,7 @@
 		height: 100%;
 	}
 
-	:global(html:not(.loaded)) {
-		--color-heading: var(--color-hidden);
-		--color-content: var(--color-hidden);
-		--color-link-fresh: var(--color-hidden);
-		--color-link-viewed: var(--color-hidden);
-	}
-
-	:global(html.loaded) {
+	:global(html) {
 		--color-heading: var(--color-darker-gray);
 		--color-content: var(--color-dark-gray);
 		--color-link-fresh: var(--color-blue);
