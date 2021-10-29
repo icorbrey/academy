@@ -43,7 +43,7 @@
 					font-family: var(--font-heading);
 					font-size: 64px;
 
-					@media screen and (max-width: 958px) {
+					@media screen and (max-width: 1000px) {
 						font-size: 56px;
 					}
 				}
@@ -52,7 +52,7 @@
 					font-family: var(--font-content);
 					font-size: 32px;
 
-					@media screen and (max-width: 958px) {
+					@media screen and (max-width: 1000px) {
 						font-size: 24px;
 					}
 				}
@@ -67,7 +67,7 @@
 				font-family: var(--font-content);
 				font-size: 24px;
 
-				@media screen and (max-width: 958px) {
+				@media screen and (max-width: 1000px) {
 					font-size: 20px;
 				}
 
