@@ -1,21 +1,31 @@
 <script lang="ts">
+	import ContentColumn from '../components/ContentColumn.svelte';
 	import Paragraph from '../components/Paragraph.svelte';
-	import Heading from '../components/Heading.svelte';
+	import Hero from '../components/Hero.svelte';
 	import Link from '../components/Link.svelte';
 
-	const github = 'https://github.com/icorbrey';
+	const githubLink = 'https://github.com/icorbrey/academy';
 </script>
 
+<Hero
+	heading="Learn at the Academy."
+	subheading="Free. Open. Ready for collaboration."
+	actionLink={githubLink}
+	actionText="Join us on GitHub" />
 <main>
-	<article>
-		<Heading level={1}>Welcome to the Academy!</Heading>
-
-		<Paragraph>
-			This site is still under construction. If you're interested, check
-			out
-			<Link to={github}>the rest of my projects on GitHub</Link>!
-		</Paragraph>
-	</article>
+	<ContentColumn>
+		<article>
+			<Paragraph>
+				The Academy project's goals are to create a collaborative
+				repository of knowledge in various subjects, including higher
+				level mathematics, computer science fundamentals and complex
+				concepts, and more. The project is currently in development, so
+				if you are interested in contributing please
+				<Link to={githubLink}>join us on GitHub</Link>.
+			</Paragraph>
+			<Paragraph>Thanks!</Paragraph>
+		</article>
+	</ContentColumn>
 </main>
 
 <style lang="scss">
@@ -23,10 +33,10 @@
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
-		padding: 40px 20px;
 
-		article {
-			max-width: 1000px;
-		}
+		width: 100%;
+		height: 100%;
+		margin-top: 32px;
+		margin-bottom: 32px;
 	}
 </style>

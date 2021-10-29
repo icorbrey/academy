@@ -8,7 +8,7 @@
 		href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap"
 		rel="stylesheet" />
 
-	<title>The Academy</title>
+	<title>Learn at the Academy</title>
 </svelte:head>
 
 <slot />
@@ -24,6 +24,10 @@
 		--color-dark-gray: #404040;
 		--color-blue: #0258a0;
 		--color-purple: #6018f8;
+		--color-offwhite: #e8e8e8;
+		--color-cool-green: #32fca8;
+
+		--content-max-width: 1182px;
 	}
 
 	:global(html),
@@ -39,5 +43,19 @@
 		--color-content: var(--color-dark-gray);
 		--color-link-fresh: var(--color-blue);
 		--color-link-viewed: var(--color-purple);
+		--color-hero-background: var(--color-darker-gray);
+		--color-hero-foreground: var(--color-offwhite);
+		--color-hero-action: var(--color-cool-green);
+	}
+
+	:global(h1),
+	:global(h2),
+	:global(h3),
+	:global(h4),
+	:global(h5),
+	:global(h6),
+	:global(p) {
+		margin: 0;
+		padding: 0;
 	}
 </style>

@@ -1,12 +1,14 @@
 <p><slot /></p>
 
 <style lang="scss">
-	p:not(:first-child) {
-		margin: 16px 0 0 0;
-		padding: 0;
-
+	p {
 		font-family: var(--font-content);
 		font-size: 20px;
 		color: var(--color-content);
+		hyphens: auto;
+
+		&:not(:first-child) {
+			margin-top: 16px;
+		}
 	}
 </style>
