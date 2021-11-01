@@ -2,26 +2,23 @@
 	import ContentColumn from '../components/ContentColumn.svelte';
 	import Paragraph from '../components/Paragraph.svelte';
 	import Hero from '../components/Hero.svelte';
-	import Link from '../components/Link.svelte';
-
-	const githubLink = 'https://github.com/icorbrey/academy';
 </script>
 
 <Hero
 	heading="Learn at the Academy."
 	subheading="Free. Open. Ready for collaboration."
-	actionLink={githubLink}
+	actionLink="https://github.com/icorbrey/academy"
 	actionText="Join us on GitHub" />
 <main>
 	<ContentColumn>
 		<article>
 			<Paragraph>
-				The Academy project's goals are to create a collaborative
+				The Academy project's goal is to create a collaborative
 				repository of knowledge in various subjects, including higher
 				level mathematics, computer science fundamentals and complex
 				concepts, and more. The project is currently in development, so
-				if you are interested in contributing please
-				<Link to={githubLink}>join us on GitHub</Link>.
+				if you are interested in contributing please join us on GitHub
+				using the link above.
 			</Paragraph>
 			<Paragraph>Thanks!</Paragraph>
 		</article>
