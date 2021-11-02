@@ -1,6 +1,6 @@
 <p><slot /></p>
 
-<style lang="scss">
+<!-- <style lang="scss">
 	p {
 		font-family: var(--font-content);
 		font-size: 20px;
@@ -11,4 +11,4 @@
 			margin-top: 16px;
 		}
 	}
-</style>
+</style> -->
