@@ -6,7 +6,7 @@ on:
 
 jobs:
   create_branch:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Create Branch From Issue
         uses: robvanderleek/create-issue-branch@main
