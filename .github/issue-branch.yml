@@ -4,3 +4,11 @@ openDraftPR: true
 copyIssueLabelsToPR: true
 copyIssueAssigneeToPR: true
 commentMessage: 'New branch `${branchName}` has been forked from `master`.'
+gitSafeReplacementChar: '-'
+branches:
+  - label: enhancement
+    prefix: feature/
+  - label: bug
+    prefix: hotfix/
+  - label: chore
+    prefix: chore/
