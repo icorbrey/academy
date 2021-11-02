@@ -1,8 +1,5 @@
 mode: chatops
 branchName: 'gh-${issue.number}/${issue.title},'
-openDraftPR: true
-copyIssueLabelsToPR: true
-copyIssueAssigneeToPR: true
 commentMessage: 'New branch `${branchName}` has been forked from `master`.'
 gitSafeReplacementChar: '-'
 branches:
