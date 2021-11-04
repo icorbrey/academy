@@ -17,11 +17,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/addon-svelte-csf": "^1.1.0",
-    "@storybook/svelte": "^6.3.12",
     "@sveltejs/adapter-netlify": "^1.0.0-next.35",
     "@sveltejs/kit": "next",
     "@types/jest": "^27.0.2",
@@ -37,11 +32,5 @@
     "tslib": "^2.3.1",
     "typescript": "^4.4.4"
   },
-  "type": "module",
-  "dependencies": {
-    "@storybook/addon-a11y": "^6.3.12",
-    "storybook-addon-outline": "^1.4.1",
-    "storybook-addon-pseudo-states": "^1.0.0",
-    "storybook-dark-mode": "^1.0.8"
-  }
+  "type": "module"
 }

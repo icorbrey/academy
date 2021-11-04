@@ -1,0 +1,11 @@
+@mixin variables {
+	--content-max-width: 1182px;
+
+	--color-heading: var(--color-darker-gray);
+	--color-content: var(--color-dark-gray);
+	--color-link-fresh: var(--color-blue);
+	--color-link-viewed: var(--color-purple);
+	--color-hero-background: var(--color-darker-gray);
+	--color-hero-foreground: var(--color-offwhite);
+	--color-hero-action: var(--color-cool-green);
+}
