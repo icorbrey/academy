@@ -1,0 +1,13 @@
+@use 'reset';
+
+@use 'variables';
+@use 'colors';
+@use 'fonts';
+@use 'sizes';
+
+:root {
+	@include variables;
+	@include colors;
+	@include fonts;
+	@include sizes;
+}
